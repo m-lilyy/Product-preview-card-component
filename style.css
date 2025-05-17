@@ -1,0 +1,120 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    margin:20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;  
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 370px;
+    height: 80%;
+    overflow: hidden; 
+    position: fixed;
+    margin: 30px; 
+}
+.content{
+    padding: 0 20px 20px 20px;   
+}
+.card img{
+    width: 100%; 
+    height: 50%;
+    margin-bottom: 0.4rem;
+    object-fit: cover;  
+}
+
+.content p:first-of-type{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;   
+}
+
+.content h1{
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 0.2rem;
+    margin-bottom: 0.7rem;
+    line-height: 30px;
+}
+.content p:last-of-type{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.6; 
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.3rem;
+}
+.discount-price{
+    font-family: "Fraunces", serif;
+    color:hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+.before-price{
+    font-family: "Fraunces", serif;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    cursor: pointer; 
+}
+button:hover{
+    background-color: hsl(158, 42%, 18%);
+}
+button .icon-cart{
+    width: 13px;
+    height: 13px; 
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+
+
+@media (min-width: 768px){
+   .card{
+    width: 35%;
+    height: 390px;
+    display:flex;
+    flex-direction: columm;
+    align-items: center;
+}
+  .card img{
+    width: 150%;
+    height: 100%;
+} 
+   button .icon-cart{
+    width: 13px;
+    height: 13px; 
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+  .content{
+    margin: 10px 10px 0 10px;
+  }
+  
+}
